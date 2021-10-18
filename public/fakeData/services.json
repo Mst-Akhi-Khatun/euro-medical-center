@@ -1,0 +1,37 @@
+[
+    {
+        "id":101,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/8Y0wwPc/doctor-1.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    {
+        "id":102,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/GxzFXCZ/Indian-doctor-Mature-Indian-male-medical-doctor-standing-isolated-on-white-background-Handsome-India.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    {
+        "id":103,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/MpPh5y0/doctor-3.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    {
+        "id":104,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/9TBjrtR/doctor-4.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    {
+        "id":105,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/D5DHv5g/doctor-5.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    {
+        "id":106,
+        "name":"General Treatment",
+        "img":"https://i.ibb.co/PYjbHQf/doctor-6.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."}
+]
