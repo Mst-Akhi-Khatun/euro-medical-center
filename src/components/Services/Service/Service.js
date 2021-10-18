@@ -7,7 +7,7 @@ const Service = () => {
     const [services, setServices] = useService();
     console.log(services);
     return (
-        <Row xs={1} md={3} className="g-4 container mx-auto">
+        <Row xs={1} md={3} className="g-4 container mx-auto my-5">
             {
                 services.map(service => <Col>
                     <Card>

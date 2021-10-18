@@ -2,36 +2,36 @@
     {
         "id":101,
         "name":"General Treatment",
-        "img":"https://i.ibb.co/8Y0wwPc/doctor-1.jpg",
+        "img":"https://freeiconshop.com/wp-content/uploads/edd/clipboard-list-flat.png",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
     },
     {
         "id":102,
-        "name":"General Treatment",
-        "img":"https://i.ibb.co/GxzFXCZ/Indian-doctor-Mature-Indian-male-medical-doctor-standing-isolated-on-white-background-Handsome-India.jpg",
+        "name":"Teeth Whitening",
+        "img":"https://www.lauraphelpsdds.com/storage/app/media/dental-black-logo.png",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
     },
     {
         "id":103,
-        "name":"General Treatment",
-        "img":"https://i.ibb.co/MpPh5y0/doctor-3.jpg",
+        "name":"Heart Surgery",
+        "img":"https://icon-library.com/images/aed-icon/aed-icon-10.jpg",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
     },
     {
         "id":104,
-        "name":"General Treatment",
-        "img":"https://i.ibb.co/9TBjrtR/doctor-4.jpg",
+        "name":"Ear Treatment",
+        "img":"https://lh3.googleusercontent.com/proxy/FALKDot378O9G0FmMzwhZ9X8KIO1PB8PSvQV6veMcPiRbkznF4TOkV5DqRMDgNXZRcorls57X6c3WGaE00wlGMP0HNNkLNSIEOuwZU4",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
     },
     {
         "id":105,
-        "name":"General Treatment",
-        "img":"https://i.ibb.co/D5DHv5g/doctor-5.jpg",
+        "name":"Vision Problems",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyZx2UrkU81QUl-yMgojLMGUMpCYm1yS2FiyNGSycqbAHCDcwY7zkizlovzHprbLF6Jk&usqp=CAU",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
     },
     {
         "id":106,
-        "name":"General Treatment",
-        "img":"https://i.ibb.co/PYjbHQf/doctor-6.jpg",
+        "name":"Blood Transfusion",
+        "img":"https://image.flaticon.com/icons/png/512/504/504064.png",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."}
 ]
