@@ -19,7 +19,6 @@ const Login = () => {
             .then((result) => {
                 history.push(redirect);
             })
-
     }
 
     const getEmailValue = (e) => {
@@ -37,18 +36,20 @@ const Login = () => {
 
     }
     return (
+        //  this is sign in / login section
         <div className="login-form">
             <div className="container py-1">
                 <div className="text-center">
                     <img src={logo} alt="" className="w-25" />
                 </div>
                 <div className="container w-100">
-                    <div className="bg-white w-50 mx-auto py-4 px-5 rounded-3">
+                    <div className="form-container mx-auto rounded-3">
                         <h3>Welcome Back!</h3>
                         <p>Login to your account using your preferred social network authentication</p>
                         <button onClick={handleSignIn} className="btn btn-outline-secondary my-3 form-control">
                             <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="25px" /> Google Sign In</button>
                         <p>Or Login with your email address and the password</p>
+                        {/* login form */}
                         <form onSubmit={handleLogIn}>
                             <label for="">Your email</label>
                             <input onBlur={getEmailValue} type="email" placeholder="Enter Your Email" className="form-control mb-4 mt-2 mx-auto" />

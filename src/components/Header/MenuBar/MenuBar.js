@@ -19,39 +19,44 @@ const MenuBar = () => {
     }
     return (
         <div>
-            <Navbar expand="lg">
-  <Container>
-  <Navbar.Brand href="#home">
-    <img
-        src={image}
-        width="90"
+            <Navbar collapseOnSelect expand="lg">
+                <Container>
+                    <Navbar.Brand href="#home">
+                        <img
+                        src={image}
+                        width="90"
         
-        className="d-inline-block align-top"
-        alt="React Bootstrap logo"
-    />
-  </Navbar.Brand>
-      <Nav className="ms-auto menu">
-        <Link to="/home">Home</Link>
-        <Link to="/doctor">Doctors</Link>
-        <Link to="/service">Services</Link>
-        <Link to="/contact">Contact Us</Link>
-        <Link to="/appointment">Appointment</Link>
-        {/* <Button>Appointment</Button> */}
+                        className="d-inline-block align-top"
+                        alt="React Bootstrap logo"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto menu d-flex align-items-center">
+                        <Nav.Item>
+                            <Link to="/home">Home</Link>
+                            <Link to="/contact">Contact Us</Link>
+                            <Link to="/appointment">Appointment</Link>
+                        </Nav.Item>
 
-         {user?.email ? <Navbar.Text>
-                            Signed in as: <a href="#login">{user?.displayName}</a>
-                            <Button onClick={logOut} variant="danger" className="mx-3 rounded-pill px-4">Log Out</Button>
-                        </Navbar.Text>
+                        {user?.email ? <Nav.Item className="mt-1 text-center">
+                            
+                            <span className="text-center">Signed in as:<a href="#login">{user?.displayName}</a></span>                                
+                            
+                            <Button onClick={logOut} variant="info" className="mx-3 mt-1 rounded-pill px-4">Log Out</Button>
+                                
+                            
+                        </Nav.Item>
                             :
-                            <div className="d-flex">
+                            <div className="d-flex mt-1">
                                 <Button onClick={handleLogIn} variant="info" className="mx-3 rounded-pill px-4">Login</Button>
                                 <Button onClick={handleSignUp} variant="info" className="rounded-pill px-4">Sign up</Button>
                             </div>
                         }
-      </Nav>
-
-  </Container>
-</Navbar>
+                    </Nav>
+                        </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </div>
     );
 };

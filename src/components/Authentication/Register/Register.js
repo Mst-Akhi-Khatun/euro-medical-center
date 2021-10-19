@@ -37,6 +37,7 @@ const Register = () => {
         UserSignUp(email, password)
         .then(() => {
             history.push(redirect);
+            window.location.reload();
             updateProfile(auth.currentUser, {
                 displayName: userName,
             })
@@ -44,24 +45,23 @@ const Register = () => {
 
     }
     return (
-        <div className="login-form text-center px-5">
+        // this is sign up / registration section
+        <div className="login-form text-center">
             <div className="container">
                 <div className="text-center">
                     <img src={logo} alt="" className="w-25" />
                 </div>
                 <div className="container w-100">
-                    <div className="bg-white w-50 mx-auto py-4 rounded-3">
+                    <div className="form-container mx-auto rounded-3">
                     <h1>Create an account</h1>
                     <p>Do not want another password to remember? No problem! Sign Up using one of your favourite social networks</p>
                     <button onClick={handleSignIn} className="btn btn-info form-control w-75 my-3 text-white">
                         <img src="https://i.ibb.co/93GM0Qf/34-345914-continue-with-google-white-g-logo-clipart-removebg-preview.png" className="me-2" width="25px" alt="" />
                         Google Sign Up</button>
+                    {/* login form  */}
                     <form onSubmit={handleSignUp}>
-                        <label for="">Your Name</label>
-                        <input onBlur={getNameValue} type="name" placeholder="Akhi" className="form-control w-75 mx-auto mb-4 mt-2" />
-                        <label for="">Your email</label>
-                        <input onBlur={getEmailValue} type="email" placeholder="akhi@gmail.com" className="form-control w-75 mx-auto mb-4 mt-2" />
-                        <label for="">Your Password</label>
+                        <input onBlur={getNameValue} type="name" placeholder="Name" className="form-control w-75 mx-auto mb-4 mt-2" />
+                        <input onBlur={getEmailValue} type="email" placeholder="Email" className="form-control w-75 mx-auto mb-4 mt-2" />
                         <input onBlur={getPasswordValue} type="password" placeholder="Enter your password" className="form-control w-75 mx-auto mb-4 mt-2" />
                         <input type="submit" value="Sign Up" className="my-2 mb-3 btn btn-info form-control w-75 text-white" />
                     </form>

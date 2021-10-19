@@ -5,3 +5,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.form-container {
+  background-color: white;
+  width: 40%;
+  padding: 15px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 100%;
+  }
+  .login-form {
+    height: 750px;
+  }
+}

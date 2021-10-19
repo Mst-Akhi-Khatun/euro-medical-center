@@ -9,20 +9,24 @@ import doctor6 from '../../../images/Doctors/doctor-6.png';
 
 const Banner = () => {
     return (
+        // this is banner section
         <div>
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+            <marquee className="text-info fs-5" width="100%" direction="right" height="50px">
+                EURO MEDICAL CENTER
+            </marquee>
+            <div id="carouselExampleControls" className="carousel slide ps-5" data-bs-ride="carousel">
             <div className="carousel-inner">
             <div className="carousel-item active">
             <div className="row">
-            <div className="col-md-6 d-flex align-items-center ps-5">
-                <div>
-                <h1>We Provide Medical Services That You Can Trust!</h1>
-                <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                <button className="btn btn-success text-white">Learn More</button>
+            <div className="col-md-6 col-12 d-flex align-items-center px-3">
+                <div className="text-justify">
+                    <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
+                    <p className="pb-3">A wide quality of diagmostic and gastroelogy service!</p>
+                    <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                    <button className="btn btn-info text-white">Learn More</button>
                 </div>
             </div>
-            <div className="col-md-6 d-flex justify-content-center">
+            <div className="col-md-6 col-12 d-flex justify-content-center">
                 <img src={doctor1} className="d-block w-75" height="600" alt="..." />
             </div>
             </div>
@@ -30,15 +34,15 @@ const Banner = () => {
             </div>
             <div className="carousel-item">
             <div className="row">
-            <div className="col-md-6 d-flex align-items-center ps-5">
+            <div className="col-md-6 col-12 d-flex align-items-center px-3">
                 <div>
-                <h1>We Provide Medical Services That You Can Trust!</h1>
-                <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                <button className="btn btn-success text-white">Learn More</button>
+                <h1 className="pb-3">Guidance for all Disease!</h1>
+                <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
+                <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                <button className="btn btn-info text-white">Learn More</button>
                 </div>
             </div>
-            <div className="col-md-6 d-flex justify-content-center">            
+            <div className="col-md-6 col-12 d-flex justify-content-center">            
             <img src={doctor2} className="d-block w-75" height="600" alt="..." />
             </div>
             </div>
@@ -46,73 +50,64 @@ const Banner = () => {
 
             <div className="carousel-item">
                 <div className="row">
-                    <div className="col-md-6 d-flex align-items-center ps-5">
+                    <div className="col-md-6 col-12 d-flex align-items-center px-3">
                         <div>
-                            <h1>We Provide Medical Services That You Can Trust!</h1>
-                            <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                            <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                            <button className="btn btn-success text-white">Learn More</button>
+                            <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
+                            <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
+                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            <button className="btn btn-info text-white">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center">
+                    <div className="col-md-6 col-12 d-flex justify-content-center">
                         <img src={doctor3} className="d-block w-100" height="600" alt="..." />
                     </div>
                 </div>
             </div>
             <div className="carousel-item">
                 <div className="row">
-                    <div className="col-md-6 d-flex align-items-center ps-5">
+                    <div className="col-md-6 col-12 d-flex align-items-center px-3">
                         <div>
-                            <h1>We Provide Medical Services That You Can Trust!</h1>
-                            <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                            <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                            <button className="btn btn-success text-white">Learn More</button>
+                            <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
+                            <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
+                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            <button className="btn btn-info text-white">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center">
+                    <div className="col-md-6 col-12 d-flex justify-content-center">
                         <img src={doctor4} className="d-block w-100" height="600" alt="..." />
                     </div>
                 </div>
             </div>
             <div className="carousel-item">
                 <div className="row">
-                    <div className="col-md-6 d-flex align-items-center ps-5">
+                    <div className="col-md-6 col-12 d-flex align-items-center px-3">
                         <div>
-                            <h1>We Provide Medical Services That You Can Trust!</h1>
-                            <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                            <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                            <button className="btn btn-success text-white">Learn More</button>
+                            <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
+                            <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
+                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            <button className="btn btn-info text-white">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center">
+                    <div className="col-md-6 col-12 d-flex justify-content-center">
                         <img src={doctor5} className="d-block w-100" height="600" alt="..." />
                     </div>
                 </div>
             </div>
             <div className="carousel-item">
                 <div className="row">
-                    <div className="col-md-6 d-flex align-items-center ps-5">
+                    <div className="col-md-6 col-12 d-flex align-items-center px-3">
                         <div>
-                            <h1>We Provide Medical Services That You Can Trust!</h1>
-                            <p>We Provide Medical Services That You Can Trust!We Provide Medical Services That You Can Trust!</p>
-                            <button className="btn btn-success text-white mx-2">Get Appointment</button>
-                            <button className="btn btn-success text-white">Learn More</button>
+                            <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
+                            <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
+                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            <button className="btn btn-info text-white">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center">
+                    <div className="col-md-6 col-12 d-flex justify-content-center">
                         <img src={doctor6} className="d-block w-75" height="600" alt="..." />
                     </div>
                 </div>
             </div>
-           {/*  <div className="carousel-item">
-            <img src={doctor4} className="d-block w-50" height="600" alt="..." />
-            </div>
-            <div className="carousel-item">
-            <img src={doctor5} className="d-block w-50" height="600" alt="..." />
-            </div>
-            <div className="carousel-item">
-            <img src={doctor6} className="d-block w-50" height="600" alt="..." />
-            </div> */}
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>

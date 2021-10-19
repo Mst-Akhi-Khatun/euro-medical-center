@@ -24,16 +24,17 @@ function App() {
     <div>
       <AuthProvider>
         <Router>
-        <Route path="">
           <MenuBar></MenuBar>
-        </Route>
           <Switch>
+          <Route exact path="/">
+              <Home></Home> 
+            </Route>
             <Route path="/home">
               <Home></Home> 
             </Route>
-            <Route path="/detail/:serviceId">
+            <PrivateRoute path="/detail/:serviceId">
               <ServiceDetail></ServiceDetail>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
                 <Login />
               </Route>
@@ -43,16 +44,14 @@ function App() {
               <PrivateRoute path="/appointment">
                 <Appointment></Appointment>
               </PrivateRoute>
-              <Route path="/contact">
+              <PrivateRoute path="/contact">
                 <ContactUs></ContactUs>
-              </Route>
-            <Route path="/*">
+              </PrivateRoute>
+            <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
-          <Route path="">
             <Footer></Footer>
-          </Route>
         </Router>
       </AuthProvider>
     </div>
