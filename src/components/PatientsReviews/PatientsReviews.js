@@ -1,6 +1,7 @@
 import React from 'react';
 import './PatientsReviews.css';
 
+// this is petient review section
 const PatientsReviews = () => {
     return (
         <div className="container text-center my-5">

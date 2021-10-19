@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useService from '../../../hooks/useService';
 
+// service detail section
 const ServiceDetail = () => {
     const { serviceId} = useParams();
     const [services, setServices] = useService();

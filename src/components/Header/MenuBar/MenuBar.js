@@ -18,6 +18,7 @@ const MenuBar = () => {
         history.push("/register")
     }
     return (
+        // this is menubar section
         <div>
             <Navbar collapseOnSelect expand="lg">
                 <Container>

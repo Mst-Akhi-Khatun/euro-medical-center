@@ -9,6 +9,7 @@ const Login = () => {
     const { user, googleSignIn, userLogin } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     
 
     const history = useHistory();
@@ -33,6 +34,9 @@ const Login = () => {
         .then((result) => {
             history.push(redirect);
         })
+        .catch((error) => {
+            setError('Email or Password is incorrect');
+        })
 
     }
     return (
@@ -47,21 +51,22 @@ const Login = () => {
                         <h3>Welcome Back!</h3>
                         <p>Login to your account using your preferred social network authentication</p>
                         <button onClick={handleSignIn} className="btn btn-outline-secondary my-3 form-control">
-                            <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="25px" /> Google Sign In</button>
+                            <img src="https://img.icons8.com/color/48/000000/google-logo.png" width="25px" alt="" /> Google Sign With Google</button>
                         <p>Or Login with your email address and the password</p>
                         {/* login form */}
+                        <p className="text-danger">{error}</p>
                         <form onSubmit={handleLogIn}>
                             <label for="">Your email</label>
-                            <input onBlur={getEmailValue} type="email" placeholder="Enter Your Email" className="form-control mb-4 mt-2 mx-auto" />
+                            <input required onBlur={getEmailValue} type="email" placeholder="Enter Your Email" className="form-control mb-4 mt-2 mx-auto" />
                             <label for="">Password</label>
-                            <input onBlur={getPasswordValue} type="password" placeholder="Enter Your Password" className="form-control mx-auto mb-4 mt-2" />
+                            <input required onBlur={getPasswordValue} type="password" placeholder="Enter Your Password" className="form-control mx-auto mb-4 mt-2" />
                             <input type="submit" value="Sign in" className="mb-3 form-control bg-info text-light" />
                         </form>
                         <p>Don’t have an account? <Link to="/register" className="text-info">Create Account</Link></p>
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 };
 

@@ -3,6 +3,7 @@ import { Card, Col, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useService from '../../../hooks/useService';
 
+// service section
 const Service = () => {
     const [services, setServices] = useService();
     console.log(services);

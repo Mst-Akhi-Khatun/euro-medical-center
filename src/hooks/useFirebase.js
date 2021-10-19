@@ -22,20 +22,14 @@ const useFirebase = () => {
     // email and password sign up
     const UserSignUp = (email, password, name) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password)
-            .catch((error) => {
-                setError(error.message);
-            })
+        return createUserWithEmailAndPassword(auth, email, password)            
             .finally(() => setLoading(false));
     }
 
      // email & password login
      const userLogin = (email, password) => {
         setLoading(true)
-        return signInWithEmailAndPassword(auth, email, password)
-            .catch((error) => {
-                setError(error);
-            })
+        return signInWithEmailAndPassword(auth, email, password)            
             .finally(() => setLoading(false));
     }
 

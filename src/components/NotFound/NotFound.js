@@ -4,6 +4,7 @@ import images from '../../images/error.jpg';
 
 const NotFound = () => {
     return (
+        // this is not found section
         <div className="container text-center py-5">
             <img src={images} className="w-100" height="500" alt="" />
             <p className="mt-4">The page you are looking for might have been removed, had its name changed,<br /> or is temporarily unavailabe.</p>

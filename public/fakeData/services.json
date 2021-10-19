@@ -20,7 +20,7 @@
     {
         "id":104,
         "name":"Ear Treatment",
-        "img":"https://lh3.googleusercontent.com/proxy/FALKDot378O9G0FmMzwhZ9X8KIO1PB8PSvQV6veMcPiRbkznF4TOkV5DqRMDgNXZRcorls57X6c3WGaE00wlGMP0HNNkLNSIEOuwZU4",
+        "img":"https://cdn0.iconfinder.com/data/icons/health-4-2/97/190-512.png",
         "description":"Ear hygiene is important, but so is safety from noise and injury. Some medications and illnesses can affect your hearing. Knowing the signs."
     },
     {
@@ -33,5 +33,5 @@
         "id":106,
         "name":"Blood Transfusion",
         "img":"https://image.flaticon.com/icons/png/512/504/504064.png",
-        "description":"Medicine has made significant progress in understanding circulation in the past few hundred years. For millennia medicine believed in the  and used bloodletting as a treatment."}
+        "description":"Medicine has made significant progress in understanding circulation in the past few hundred years. For millennia medicine believed in the  and used bloodletting."}
 ]

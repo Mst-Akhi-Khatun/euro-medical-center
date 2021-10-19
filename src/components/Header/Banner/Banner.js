@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import doctor1 from '../../../images/Doctors/doctor-1.png';
 import doctor2 from '../../../images/Doctors/doctor-2.png';
 import doctor3 from '../../../images/Doctors/doctor-3.png';
@@ -22,8 +23,11 @@ const Banner = () => {
                 <div className="text-justify">
                     <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
                     <p className="pb-3">A wide quality of diagmostic and gastroelogy service!</p>
-                    <button className="btn btn-info text-white mx-2">Get Appointment</button>
                     <button className="btn btn-info text-white">Learn More</button>
+                    <Link to="/appointment">
+                        <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                    </Link>
+                    
                 </div>
             </div>
             <div className="col-md-6 col-12 d-flex justify-content-center">
@@ -38,8 +42,10 @@ const Banner = () => {
                 <div>
                 <h1 className="pb-3">Guidance for all Disease!</h1>
                 <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
-                <button className="btn btn-info text-white mx-2">Get Appointment</button>
                 <button className="btn btn-info text-white">Learn More</button>
+                <Link to="/appointment">
+                    <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                </Link>
                 </div>
             </div>
             <div className="col-md-6 col-12 d-flex justify-content-center">            
@@ -54,8 +60,10 @@ const Banner = () => {
                         <div>
                             <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
                             <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
-                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
                             <button className="btn btn-info text-white">Learn More</button>
+                            <Link to="/appointment">
+                                <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-12 d-flex justify-content-center">
@@ -69,8 +77,10 @@ const Banner = () => {
                         <div>
                             <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
                             <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
-                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
                             <button className="btn btn-info text-white">Learn More</button>
+                            <Link to="/appointment">
+                                <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-12 d-flex justify-content-center">
@@ -84,8 +94,10 @@ const Banner = () => {
                         <div>
                             <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
                             <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
-                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
                             <button className="btn btn-info text-white">Learn More</button>
+                            <Link to="/appointment">
+                                <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-12 d-flex justify-content-center">
@@ -99,8 +111,10 @@ const Banner = () => {
                         <div>
                             <h1 className="pb-3">We Provide Medical Services That You Can Trust!</h1>
                             <p className="pb-3">A wide quality of diagmostic and gastroelogy service</p>
-                            <button className="btn btn-info text-white mx-2">Get Appointment</button>
                             <button className="btn btn-info text-white">Learn More</button>
+                            <Link to="/appointment">
+                                <button className="btn btn-info text-white mx-2">Get Appointment</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-12 d-flex justify-content-center">

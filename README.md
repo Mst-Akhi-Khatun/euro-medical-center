@@ -9,7 +9,7 @@ Visit My Site [Click Here](https://euro-medical-center.web.app/).
 ## About This Site
 
 <ul>
-    <li>There are 6 experienced doctors in Euro Medical Center.</li>
+    <li>There are 4 experienced doctors in Euro Medical Center.</li>
     <li>Three private routes have been created.</li>
     <li>Patients' opinions are shown here.</li>
     <li>Google and email password authentication has been done.</li>

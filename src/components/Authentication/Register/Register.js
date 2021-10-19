@@ -10,6 +10,7 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [userName, setUserName] = useState('');
+    const [error, setError] = useState('');
 
     const history = useHistory();
     const location = useLocation();
@@ -34,6 +35,13 @@ const Register = () => {
     const auth = getAuth();
     const handleSignUp = (e) => {
         e.preventDefault();
+        if (password.length < 6) {
+            setError('Password must be at least 6 characters')
+            return;
+        }
+        else{
+            setError('')
+        }
         UserSignUp(email, password)
         .then(() => {
             history.push(redirect);
@@ -41,6 +49,9 @@ const Register = () => {
             updateProfile(auth.currentUser, {
                 displayName: userName,
             })
+        })
+        .catch((error) => {
+            setError('Email is already in used');
         })
 
     }
@@ -59,12 +70,14 @@ const Register = () => {
                         <img src="https://i.ibb.co/93GM0Qf/34-345914-continue-with-google-white-g-logo-clipart-removebg-preview.png" className="me-2" width="25px" alt="" />
                         Google Sign Up</button>
                     {/* login form  */}
+                    <p className="text-danger">{error}</p>
                     <form onSubmit={handleSignUp}>
-                        <input onBlur={getNameValue} type="name" placeholder="Name" className="form-control w-75 mx-auto mb-4 mt-2" />
-                        <input onBlur={getEmailValue} type="email" placeholder="Email" className="form-control w-75 mx-auto mb-4 mt-2" />
-                        <input onBlur={getPasswordValue} type="password" placeholder="Enter your password" className="form-control w-75 mx-auto mb-4 mt-2" />
+                        <input required onBlur={getNameValue} type="name" placeholder="Name" className="form-control w-75 mx-auto mb-4 mt-2" />
+                        <input required onBlur={getEmailValue} type="email" placeholder="Email" className="form-control w-75 mx-auto mb-4 mt-2" />
+                        <input required onBlur={getPasswordValue} type="password" placeholder="Enter your password" className="form-control w-75 mx-auto mb-4 mt-2" />
                         <input type="submit" value="Sign Up" className="my-2 mb-3 btn btn-info form-control w-75 text-white" />
                     </form>
+                    
                     <p>Already have an account? <Link to="/login" className="text-info">Login</Link></p>
                     </div>
                 </div>

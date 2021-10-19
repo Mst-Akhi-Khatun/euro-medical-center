@@ -7,6 +7,7 @@ import Doctors from '../Doctors/Doctors';
 
 const Home = () => {
     return (
+        // this is home section
         <div>
             <Banner></Banner>
             <Service></Service>
