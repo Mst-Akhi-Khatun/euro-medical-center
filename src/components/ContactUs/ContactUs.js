@@ -55,7 +55,7 @@ const ContactUs = () => {
                     <input className="px-2 py-3 form-control" type="number" name="" id="" placeholder="Phone" />
                     <input className="my-3 px-2 py-3 form-control" type="text" name="" id="" placeholder="Subject" />
                     <textarea className="my-3 form-control" rows="8" cols="53"></textarea>
-                    <input className="btn btn-info text-white" type="submit" value="Book An Appointment" />
+                    <input className="btn btn-info text-white" type="submit" value="Send Message" />
                 </form>
                 </div> 
             </div>

@@ -22,7 +22,7 @@ const useFirebase = () => {
     // email and password sign up
     const UserSignUp = (email, password, name) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password)            
+        return createUserWithEmailAndPassword(auth, email, password, name)            
             .finally(() => setLoading(false));
     }
 
